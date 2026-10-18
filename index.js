@@ -13,6 +13,10 @@ app.get("/cad", (req, res) => {
     res.render("formulario")
 })
 
+app.get("/lista", async(req, res) =>{
+    
+})
+
 app.listen(3000, () =>{
     console.log("Server iniciado em: http://localhost:3000")
 })    
