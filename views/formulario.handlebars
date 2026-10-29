@@ -1,0 +1,76 @@
+<form action="/add" method="POST">
+    <h3>Cadastrar Postagens</h3>
+    <div class="titulo">
+
+        <label>Titulo</label>
+        <input type="text" name="title" id="nome" placeholder="Nome">
+    </div>
+
+    <div class="conteudo">
+        <label>Conteudo</label>
+        <textarea name="cont" id="cont"></textarea>
+    </div>
+    <button type="submit">Cadastrar</button>
+</form>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    form{
+        background-color: rgb(144, 69, 69);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 36px;
+        width: 36%;
+        height: 500px;
+        box-shadow: 4px 5px 12px rgb(85, 214, 50);
+        border-radius: 10px;
+        border-color: brown;
+
+
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    label{
+        padding-right: 80%;
+    }
+    .titulo > #nome {
+        width: 280px;
+        height: 34px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(250, 249, 249, 0.982);
+    }
+
+    .conteudo > #cont{
+        width: 280px;
+        height: 70px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(255, 247, 247);
+    }
+
+    button{
+        border: none;
+        width: 280px;
+        height: 34px;
+        border-radius: 10px;
+        background-color: rgb(86, 164, 8);
+        
+    }
+</style>
