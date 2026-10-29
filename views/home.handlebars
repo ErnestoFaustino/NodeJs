@@ -1,0 +1,20 @@
+<h1>Lista de Postagens</h1>
+
+<table border="1">
+    <tr>
+        <th>Titulo</th>
+        <th>Conteudo</th>
+        <th>Data de criação</th>
+    </tr>
+{{#each resultado}}
+        <tbody>
+            <tr>
+                <td>{{titulo}}</td>
+                <td>{{conteudo}}</td>
+                <td>{{data_criacao}}</td>
+                <td><a href="/apagar/{{id}}"><button>apagar</button></a></td>
+            </tr>
+        </tbody>
+    
+{{/each}}
+</table>
